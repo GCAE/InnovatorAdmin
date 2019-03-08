@@ -761,7 +761,8 @@ namespace InnovatorAdmin.Editor
                   || elemIds.EndsWith("ItemType", "class_structure")
                   || elemIds.EndsWith("qry_QueryReference", "filter_xml")
                   || elemIds.EndsWith("qry_QueryItem", "filter_xml")
-                  || elemIds.EndsWith("mp_MacCondition", "condition_xml");
+                  || elemIds.EndsWith("mp_MacCondition", "condition_xml")
+                  || elemIds.EndsWith("tp_Block", "content");
                 var useCData = elemIds.EndsWith("EMail Message", "body_html")
                   || elemIds.EndsWith("EMail Message", "body_plain")
                   || elemIds.EndsWith("Method", "method_code")
@@ -2072,6 +2073,8 @@ order by 1
   <Item type='Permission_PropertyValue' action='get' select='config_id'></Item>
   <Item type='PreferenceTypes' action='get' select='config_id'></Item>
   <Item type='PresentationConfiguration' action='get' select='config_id'></Item>
+  <Item type='qry_QueryDefinition' action='get' select='config_id'></Item>
+  <Item type='rb_TreeGridViewDefinition' action='get' select='config_id'></Item>
   <Item type='Report' action='get' select='config_id'></Item>
   <Item type='Revision' action='get' select='config_id'></Item>
   <Item type='SearchMode' action='get' select='config_id'></Item>
